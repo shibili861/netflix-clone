@@ -1,0 +1,37 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  height: 70px;
+  box-sizing: border-box; /* Keeps padding inside the 100% width */
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s ease-in;
+}
+
+.nav__black {
+  background-color: #111;
+}
+
+.nav__logo {
+  width: 80px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.nav__avatar {
+  width: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Mobile Responsiveness for Navbar */
+@media (max-width: 768px) {
+  .nav {
+    padding: 20px; /* Shrink padding on small screens */
+  }
+}
